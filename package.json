@@ -1,0 +1,21 @@
+{
+  "name": "fine-tune-image",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "train": "npx ts-node ./submitTrainingTask.ts",
+    "inference": "npx ts-node ./runInferenceAndRegister.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@story-protocol/core-sdk": "^1.2.0-rc.4",
+    "axios": "^1.7.9",
+    "pinata-web3": "^0.5.4",
+    "viem": "^2.22.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7"
+  }
+}
