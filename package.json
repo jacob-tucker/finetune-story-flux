@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "train": "npx ts-node ./submitTrainingTask.ts",
-    "inference": "npx ts-node ./runInferenceAndRegister.ts"
+    "inference": "npx ts-node ./runInferenceAndRegister.ts",
+    "create-collection": "npx ts-node ./features/story/createSpgNftCollection.ts"
   },
   "author": "",
   "license": "ISC",
