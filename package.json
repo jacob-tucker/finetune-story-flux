@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "train": "npx ts-node ./submitTrainingTask.ts",
-    "inference": "npx ts-node ./runInferenceAndRegister.ts",
+    "train": "npx ts-node ./scripts/train.ts",
+    "inference": "npx ts-node ./scripts/inference.ts",
+    "finetune-details": "npx ts-node ./scripts/finetune-details.ts",
+    "finetune-list": "npx ts-node ./scripts/finetune-list.ts",
+    "finetune-progress": "npx ts-node ./scripts/finetune-progress.ts",
+    "delete": "npx ts-node ./scripts/delete.ts",
     "create-collection": "npx ts-node ./features/story/createSpgNftCollection.ts"
   },
   "author": "",

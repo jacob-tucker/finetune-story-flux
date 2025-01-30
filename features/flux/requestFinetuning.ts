@@ -59,8 +59,6 @@ export async function requestFinetuning(
 
   try {
     const response = await axios.post(url, payload, { headers });
-    console.log(response);
-    console.log(response.data);
     return response.data;
   } catch (error) {
     throw new Error(`Finetune request failed: ${error}`);
