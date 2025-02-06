@@ -8,6 +8,6 @@ export const account: Account = privateKeyToAccount(privateKey);
 const config: StoryConfig = {
   account: account,
   transport: http(process.env.RPC_PROVIDER_URL),
-  chainId: "odyssey",
+  chainId: "aeneid",
 };
 export const client = StoryClient.newClient(config);

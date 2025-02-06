@@ -59,9 +59,9 @@ export async function registerIp(inference: Inference) {
     .update(JSON.stringify(nftMetadata))
     .digest("hex");
 
-  const response = await client.ipAsset.mintAndRegisterIpAssetWithPilTerms({
+  const response = await client.ipAsset.mintAndRegisterIp({
     spgNftContract: process.env.SPG_NFT_CONTRACT_ADDRESS as Address,
-    terms: [], // IP already has non-commercial social remixing terms. You can add more here.
+    allowDuplicates: true,
     ipMetadata: {
       ipMetadataURI: `https://ipfs.io/ipfs/${ipIpfsHash}`,
       ipMetadataHash: `0x${ipHash}`,

@@ -29,7 +29,7 @@ If you want to just run the code:
 
    a. `WALLET_PRIVATE_KEY`: is your Story wallet private key (no '0x' prefix)
 
-   b. `RPC_PROVIDER_URL`: set this to `https://rpc.odyssey.storyrpc.io`
+   b. `RPC_PROVIDER_URL`: set this to `https://aeneid.storyrpc.io`
 
    c. `SPG_NFT_CONTRACT_ADDRESS`: run `npm run create-collection` to get this address
 
