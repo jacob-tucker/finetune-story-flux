@@ -7,7 +7,7 @@ export const account: Account = privateKeyToAccount(privateKey);
 
 const config: StoryConfig = {
   account: account,
-  transport: http(process.env.RPC_PROVIDER_URL),
+  transport: http(process.env.RPC_PROVIDER_URL || "https://aeneid.storyrpc.io"),
   chainId: "aeneid",
 };
 export const client = StoryClient.newClient(config);
