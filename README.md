@@ -31,9 +31,9 @@ If you want to just run the code:
 
    b. `RPC_PROVIDER_URL`: set this to `https://aeneid.storyrpc.io`
 
-   c. `SPG_NFT_CONTRACT_ADDRESS`: run `npm run create-collection` to get this address
+   c. `PINATA_JWT`: is your Pinata JWT. Get this from <a href="https://app.pinata.cloud/" target="_blank">Pinata</a>.
 
-   d. `PINATA_JWT`: is your Pinata JWT. Get this from <a href="https://app.pinata.cloud/" target="_blank">Pinata</a>.
+   d. `SPG_NFT_CONTRACT_ADDRESS`: [OPTIONAL] we have already configured a public SPG NFT collection for you (`0xc32A8a0FF3beDDDa58393d022aF433e78739FAbc`), but if you want your own collection, run `npm run create-collection` to get this address
 
 4. `npm run train` to train a new finetune model. This will use the images in `/ippy-images` to train the model. You can replace these with your own.
 5. Add the output `FINETUNE_ID` to your `.env`
